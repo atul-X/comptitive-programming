@@ -1,4 +1,4 @@
-package algorithms.string;
+package com.algorithms.string;
 
 public class MaxWordsInSentences {
     public int mostWordsFound(String[] sentences) {
@@ -17,6 +17,16 @@ public class MaxWordsInSentences {
         return maxSum;
     }
     public static void main(String args[]){
-
+        MaxWordsInSentences solution = new MaxWordsInSentences();
+        
+        // Test case
+        String[] sentences = {
+            "alice and bob are playing",
+            "this is a test sentence",
+            "the quick brown fox jumps over the lazy dog"
+        };
+        
+        int result = solution.mostWordsFound(sentences);
+        System.out.println("Maximum words in a sentence: " + result);
     }
 }

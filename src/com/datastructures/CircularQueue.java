@@ -1,4 +1,4 @@
-package datastructures;
+package com.datastructures;
 
 public class CircularQueue {
     int size =5;
