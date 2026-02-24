@@ -2,7 +2,7 @@ package algorithms.array;
 
 import java.util.Arrays;
 
-public class CreateTargetArrayInTheGivenOrder {
+public class CreateTargetArray {
 
     public int[] createTargetArray(int[] nums, int[] index) {
         int[] result=new int[nums.length];
@@ -18,8 +18,8 @@ public class CreateTargetArrayInTheGivenOrder {
     }
     public static void main(String[] args) {
         int[] nums={0,1,2,3,4},index={0,1,2,2,1};
-        CreateTargetArrayInTheGivenOrder countTheNumberOfConsistentStrings=new CreateTargetArrayInTheGivenOrder();
-        countTheNumberOfConsistentStrings.createTargetArray(nums,index);
+        CreateTargetArray createTargetArray=new CreateTargetArray();
+        createTargetArray.createTargetArray(nums,index);
     }
     public int maxProduct(int[] nums) {
         Arrays.sort(nums);

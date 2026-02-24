@@ -1,6 +1,6 @@
 package algorithms.array;
 
-public class MinimumNumberOfOperationsToMoveAllBallsToEachBox {
+public class MinOperationsToMoveBalls {
     public int[] minOperations(String boxes) {
         int[] result=new int[boxes.length()];
         int operationCount=0;
@@ -22,7 +22,7 @@ public class MinimumNumberOfOperationsToMoveAllBallsToEachBox {
 
     public static void main(String args[]){
         String arr="110";
-        MinimumNumberOfOperationsToMoveAllBallsToEachBox minimumNumberOfOperationsToMoveAllBallsToEachBox=new MinimumNumberOfOperationsToMoveAllBallsToEachBox();
-        minimumNumberOfOperationsToMoveAllBallsToEachBox.minOperations(arr);
+        MinOperationsToMoveBalls minOperationsToMoveBalls=new MinOperationsToMoveBalls();
+        minOperationsToMoveBalls.minOperations(arr);
     }
 }

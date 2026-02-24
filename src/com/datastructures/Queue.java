@@ -1,5 +1,7 @@
 package datastructures;// Queue implementation in Java
 
+import algorithms.string.StringClass;
+
 public class Queue {
     int SIZE = 5;
     int items[] = new int[SIZE];

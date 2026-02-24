@@ -1,5 +1,7 @@
 package practice.beginner;
 
+import algorithms.string.StringClass;
+
 class Main {
     private int arr[];
     private int top;

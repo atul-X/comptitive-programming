@@ -1,6 +1,6 @@
 package algorithms.array;
 
-public class RunningSumOf1dArray {
+public class RunningSumArray {
     public int[] runningSum(int[] nums) {
         int currentSum=0;
         int[] arr=new int[nums.length];

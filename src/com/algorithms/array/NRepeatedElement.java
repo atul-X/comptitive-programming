@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class NRepeatedElementinSize2NArray {
+public class NRepeatedElement {
     public int repeatedNTimes(int[] nums) {
         Arrays.sort(nums);
         for (int i=0;i<nums.length;i++){
@@ -17,7 +17,7 @@ public class NRepeatedElementinSize2NArray {
     }
     public static void main(String[] args) {
         int[] arr={1,2,3,3};
-        NRepeatedElementinSize2NArray nRepeatedElementinSize2NArray=new NRepeatedElementinSize2NArray();
-        nRepeatedElementinSize2NArray.repeatedNTimes(arr);
+        NRepeatedElement nRepeatedElement=new NRepeatedElement();
+        nRepeatedElement.repeatedNTimes(arr);
     }
 }

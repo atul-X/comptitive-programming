@@ -1,6 +1,6 @@
 package algorithms.array;
 
-public class ConcatenationOfArray {
+public class ArrayConcatenation {
     public int[] getConcatenation(int[] nums) {
        int count=0;
        int[] arr=new int[nums.length*2];

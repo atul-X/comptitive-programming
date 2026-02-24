@@ -1,10 +1,10 @@
-package algorithms.array;
+package algorithms.string;
 
 import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Reverse {
+public class StringPalindrome {
     public static void main(String[] args) {
 
         Scanner sc=new Scanner(System.in);

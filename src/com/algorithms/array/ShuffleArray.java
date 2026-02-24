@@ -1,6 +1,6 @@
 package algorithms.array;
 
-public class ShuffleTheArray {
+public class ShuffleArray {
     public int[] shuffle(int[] nums, int n) {
         int[] arr=new int[nums.length];
         int count=0;
@@ -16,7 +16,7 @@ public class ShuffleTheArray {
     }
     public static void main(String args[]){
     int[] arr={2,5,1,3,4,7};
-    ShuffleTheArray shuffleTheArray=new ShuffleTheArray();
-    shuffleTheArray.shuffle(arr,3);
+    ShuffleArray shuffleArray=new ShuffleArray();
+    shuffleArray.shuffle(arr,3);
     }
 }

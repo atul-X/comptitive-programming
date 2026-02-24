@@ -1,9 +1,9 @@
 package algorithms.array;
 
-public class SubrectangleQueriesMain {
-    class SubrectangleQueries {
+public class SubrectangleQueries {
+    class SubrectangleQueriesImpl {
         int a[][];
-        public SubrectangleQueries(int[][] rectangle) {
+        public SubrectangleQueriesImpl(int[][] rectangle) {
             a=rectangle;
         }
 

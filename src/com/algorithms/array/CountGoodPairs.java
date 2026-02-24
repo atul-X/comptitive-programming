@@ -1,6 +1,6 @@
 package algorithms.array;
 
-public class NumberOfGoodPairs {
+public class CountGoodPairs {
     public int numIdenticalPairs(int[] nums) {
         int count=0;
         for (int i=0;i<nums.length;i++){
@@ -13,8 +13,9 @@ public class NumberOfGoodPairs {
         return count;
     }
     public static void main(String args[]){
+        String s="accc";
         int[] arr={1,2,3,1,1,3};
-        NumberOfGoodPairs numberOfGoodPairs=new NumberOfGoodPairs();
+        CountGoodPairs numberOfGoodPairs=new CountGoodPairs();
         numberOfGoodPairs.numIdenticalPairs(arr);
     }
 }

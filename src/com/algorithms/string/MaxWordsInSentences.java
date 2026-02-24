@@ -1,5 +1,10 @@
 package com.algorithms.string;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class MaxWordsInSentences {
     public int mostWordsFound(String[] sentences) {
         int maxSum=0; int currentSum=0;
@@ -16,8 +21,25 @@ public class MaxWordsInSentences {
         }
         return maxSum;
     }
+    public String replaceCharAtIndex(String s, int index, char newChar) {
+        if (index < 0 || index >= s.length()) {
+            return s; // Return original string if index is invalid
+        }
+        char[] chars = s.toCharArray();
+        chars[index] = newChar;
+        return new String(chars);
+    }
+
+
+
     public static void main(String args[]){
         MaxWordsInSentences solution = new MaxWordsInSentences();
+        
+        // Index-based string replacement example
+        String s = "1011";
+        String replaced = solution.replaceCharAtIndex(s, 1, '1'); // Replace character at index 1
+        System.out.println("Original string: " + s);
+        System.out.println("After replacing char at index 1 with '1': " + replaced);
         
         // Test case
         String[] sentences = {

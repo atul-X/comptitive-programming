@@ -1,6 +1,6 @@
 package algorithms.array;
 
-public class DecompressRunLengthEncodedList {
+public class DecompressRunLengthList {
     public int[] decompressRLElist(int[] nums) {
         int countfreq=0;
         for (int z=0;z<=nums.length-1;z++){
@@ -23,7 +23,7 @@ public class DecompressRunLengthEncodedList {
     }
     public static void main(String args[]){
         int[] arr={1,2,3,4};
-        DecompressRunLengthEncodedList decompressRunLengthEncodedList=new DecompressRunLengthEncodedList();
-        decompressRunLengthEncodedList.decompressRLElist(arr);
+        DecompressRunLengthList decompressRunLengthList=new DecompressRunLengthList();
+        decompressRunLengthList.decompressRLElist(arr);
     }
 }
