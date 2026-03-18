@@ -1,9 +1,6 @@
 package algorithms.backtracking;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class StringContainsBinaryCode {
 //    public boolean hasAllCodes(String s, int k) {
@@ -34,7 +31,16 @@ public class StringContainsBinaryCode {
         }
         return false;
     }
-
+    public int[] sortByBits(int[] arr) {
+        return  Arrays.stream(arr).boxed().sorted((a,b)->{
+                    int countABit=Integer.bitCount(a);
+                    int countBBit =Integer.bitCount(b);
+                    if (countABit!= countBBit){
+                        return Integer.compare(countABit, countBBit);
+                    }
+                    return Integer.compare(a,b);
+               }).mapToInt(Integer::intValue).toArray();
+    }
     void genBacktrack(int k, StringBuilder s, Set<String> ans){
         if(s.length()==k){
             ans.add(s.toString());
@@ -48,9 +54,7 @@ public class StringContainsBinaryCode {
         }
     }
 
-    public static void main(String[] args) {
-        StringContainsBinaryCode stringContainsBinaryCode=new StringContainsBinaryCode();
-        stringContainsBinaryCode.hasAllCodes("00110110",2);
-    }
+
+
 
 }
