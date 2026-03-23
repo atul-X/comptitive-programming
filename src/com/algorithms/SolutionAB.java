@@ -49,7 +49,38 @@ public class SolutionAB {
 
         return count;
     }
-
+    public int solution1(String S, int[] X, int[] Y) {
+        int n=S.length();
+        List<Point> points=new ArrayList<>();
+        for (int i=0;i<n;i++){
+            long dist2=1L*X[i]*X[i]+1L*Y[i]*Y[i];
+            points.add(new Point(dist2,S.charAt(i)));
+        }
+        Collections.sort(points,Comparator.comparingLong(p->p.dist2));
+        Set<Character> used=new HashSet<>();
+        int i=0;
+        int count=0;
+        while (i<n){
+            int j=i;
+            Set<Character> group=new HashSet<>();
+            while (j<n&&points.get(j).dist2==points.get(i).dist2){
+                if (group.contains(points.get(j).tag)){
+                    return count++;
+                }
+                group.add(points.get(j).tag);
+                j++;
+            }
+            for (Character tg:group){
+                if (used.contains(tg)){
+                    return count;
+                }
+            }
+            used.addAll(group);
+            count+=group.size();
+            i=j;
+        }
+        return count;
+    }
     // ---------------- MAIN FUNCTION ----------------
     public static void main(String[] args) {
         SolutionAB sol = new SolutionAB();
