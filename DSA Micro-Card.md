@@ -1,6 +1,7 @@
-# Next Permutation (LeetCode 31)
+# 1-Line Core Takeaway:
 
-> **1-Line Core Takeaway:**
+
+## Next Permutation (LeetCode 31)
 > Find the rightmost digit that can increase ($nums[i] < nums[i+1]$), swap it with the smallest larger element to its right, and reverse the remaining suffix to minimize it in $O(N)$ time.
 
 ---
